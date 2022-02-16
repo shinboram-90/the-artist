@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom';
+import { Outlet, useParams } from 'react-router-dom';
 import { paintingData } from '../data/paintingData';
 
 function PaintingDisplay() {
@@ -9,6 +9,7 @@ function PaintingDisplay() {
         <h1>{paintingData[id - 1].name}</h1>{' '}
         <p>{paintingData[id - 1].description}</p>{' '}
       </div>
+      <Outlet />
     </div>
   );
 }

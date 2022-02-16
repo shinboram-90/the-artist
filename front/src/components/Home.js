@@ -1,7 +1,15 @@
+import { Link, Outlet, useNavigate } from 'react-router-dom';
+
 function Home() {
   return (
     <div>
-      <h1>This is the home page</h1>
+      <nav className="painting">
+        <Link to="paintings/search"> Search </Link>
+        {/* <Link to=":id"> List </Link> */}
+        <Link to="paintings/add"> Add </Link>
+        <hr />
+        <Outlet />
+      </nav>
     </div>
   );
 }

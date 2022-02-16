@@ -1,14 +1,32 @@
-import { Link, Outlet } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import { paintingData } from '../data/paintingData';
 
 function Painting() {
+  const navigate = useNavigate();
   return (
-    <div className="painting">
-      <Link to="/paintings/search"> Search </Link>
-      <Link to="/paintings/list"> List </Link>
-      <Link to="/paintings/add"> Add </Link>
-
-      <Outlet />
-    </div>
+    <>
+      <section className="listOfProducts">
+        <div className="productsList">
+          {paintingData.map((painting) => {
+            return (
+              <div
+                key={painting.id}
+                className="productDisplay"
+                onClick={() => {
+                  navigate(`${painting.id}`);
+                }}
+              >
+                {console.log(painting)}
+                <h1>{painting.name}</h1>
+                {/* <p>{painting.description}</p>
+                <img alt="test" src={`../assets/78/${painting.photo}`} /> */}
+                {/* src={`../images/${props.painting.img}`} */}
+              </div>
+            );
+          })}
+        </div>
+      </section>
+    </>
   );
 }
 

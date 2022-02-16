@@ -1,42 +1,35 @@
-import { BrowserRouter as Router, Link, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import './../styles/App.css';
-
-import Home from './Home';
+import Activity from './Activity';
+import Layout from './Layout';
 import About from './About';
 import Contact from './Contact';
 import Missing from './Missing';
+import Home from './Home';
 
 import Paintings from './Paintings';
-// import Search from '../paintings/Search';
-import PaintingDisplay from './PaintingDisplay';
-import ListPaintings from './ListPaintings';
-// import Navbar from '../components/Navbar';
-// import Login from './Login';
+import Search from './Search';
 // import AddPainting from './paintings/AddPainting';
+import PaintingDisplay from './PaintingDisplay';
+
+// import Login from './Login';
 
 function App() {
   return (
-    <Router>
-      <nav className="navbar">
-        <Link to="/"> Menu </Link>
-        <Link to="paintings/list"> Tableaux </Link>
-        <Link to="about">A propos</Link>
-        <Link to="contact">Contact</Link>
-        {/* <Link to="login"> Login </Link> */}
-      </nav>
-      <Routes>
-        <Route path="/" element={<Home />} />
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Activity />} />
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
-        <Route path="paintings" element={<Paintings />}>
-          <Route path="list" element={<ListPaintings />} />
+        <Route path="paintings" element={<Home />}>
+          <Route index element={<Paintings />} />
           <Route path=":id" element={<PaintingDisplay />} />
-          {/* <Route path="search" element={<Search />} /> */}
+          <Route path="search" element={<Search />} />
           {/* <Route path="add" element={<AddPainting />} /> */}
         </Route>
         <Route path="*" element={<Missing />} />
-      </Routes>
-    </Router>
+      </Route>
+    </Routes>
   );
 }
 
