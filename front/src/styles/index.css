@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  max-width: 1900px;
 }
 
 code {
@@ -20,4 +21,8 @@ a,
 a:active {
   text-decoration: none; /* no underline */
   color: white;
+}
+
+section {
+  padding: 3rem;
 }
