@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import { paintingData } from '../data/paintingData';
+import '../styles/paintings.css';
 
 function Painting() {
   const navigate = useNavigate();
@@ -18,8 +19,12 @@ function Painting() {
               >
                 {console.log(painting)}
                 <h1>{painting.name}</h1>
-                {/* <p>{painting.description}</p>
-                <img alt="test" src={`../assets/78/${painting.photo}`} /> */}
+                <p>{painting.description}</p>
+                <img
+                  className="paintings--image"
+                  alt="test"
+                  src={painting.photo}
+                />
                 {/* src={`../images/${props.painting.img}`} */}
               </div>
             );

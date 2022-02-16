@@ -63,7 +63,8 @@ export const paintingData = [
       'Lorem ipsum dolor sit amet. Ex ipsum quam ex magni fuga hic dolore dolore sit ipsa nemo et modi aperiam est modi deleniti. Id accusamus dolorem qui quos quas eos possimus eligendi aut consequatur doloremque.',
     'price': 2000,
     'frame': true,
-    'photo': 'https://react.semantic-ui.com/images/avatar/large/rachel.png',
+    'photo':
+      'https://res.cloudinary.com/dblhjhkq0/image/upload/v1645009007/171_Volupt%C3%A9_de_la_couleur_9480_dro1bv.jpg',
   },
   {
     'id': 7,
