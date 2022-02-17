@@ -14,9 +14,9 @@ function Activity() {
 
           <blockquote>
             <p>
-              L'ART est comme une prière, une main étendue dans l'obscurité qui
-              veut saisir une part de grâce afin de se muer en une main... qui
-              donne !
+              <strong>L'ART</strong> est comme une prière, une main étendue dans
+              l'obscurité qui veut saisir une part de grâce afin de se muer en
+              une main... qui donne !
             </p>
             <span className="quote--ending">À bientôt,</span>
             <figcaption className="quote--signature">
@@ -31,7 +31,7 @@ function Activity() {
         </figure>
       </header>
       <section className="section--video">
-        <h2>test</h2>
+        <h2>Artiste Peintre Impressionniste</h2>
 
         <video controls autoPlay loop muted>
           <source

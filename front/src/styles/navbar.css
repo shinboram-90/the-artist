@@ -6,10 +6,22 @@
   /* background-color: #003459; */
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 }
+/* 
+.navbar a:hover {
+  color: #9367c0;
+} */
 
-.wave {
+/* .wave {
   position: fixed;
   z-index: -1;
+  display: none;
+} */
+
+.img--splash-nav {
+  height: 70%;
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
   display: none;
 }
 
@@ -32,8 +44,79 @@
 
 @media screen and (max-width: 620px) {
   .navbar--items {
-    display: none;
+    /* visibility: hidden; */
     flex-direction: column;
     font-size: 1.3rem;
+    position: fixed;
+    top: 6.5rem;
+    line-height: 4rem;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border-radius: 10px 0 0 10px;
+    padding: 1rem 0;
+    right: 0;
+
+    /* transform: translateX(-11rem);
+    transition: all 330ms ease-in-out; */
+  }
+
+  .show--nav {
+    transform: translateX(11rem);
+    transition: all 330ms ease-in-out;
+  }
+
+  .hide--nav {
+    transform: translateX(0rem);
+    transition: all 330ms ease-in-out;
+  }
+
+  .rotate--img {
+    transform: rotate(0.5turn);
+    transition: transform 330ms ease-in-out;
+  }
+  .rotate--img-2 {
+    transform: rotate(-0.5turn);
+    transition: transform 330ms ease-in-out;
+  }
+
+  .navbar--items li {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    /* background: rgba(255, 255, 255, 0.2); */
+    background: #9367c0; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #f1c9cb,
+      #9367c0
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #f1c9cb,
+      #9367c0
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    margin: 0.5rem 0 0.5rem 1rem;
+    border-radius: 9px 0 0 9px;
+  }
+
+  .navbar--items a {
+    padding-right: 2rem;
+    color: white;
+
+    font-weight: 700;
+  }
+  .img--splash-nav {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .navbar > ul {
+    padding: 0.5rem rem;
   }
 }
