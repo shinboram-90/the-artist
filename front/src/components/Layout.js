@@ -10,10 +10,6 @@ function Layout() {
     setActive(!isActive);
   };
 
-  if (isActive) {
-    console.log('i am active');
-  }
-
   return (
     <div>
       <nav className="navbar">

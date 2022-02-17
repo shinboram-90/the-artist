@@ -7,7 +7,7 @@ function Home() {
         <Link to="paintings/search"> Search </Link>
         {/* <Link to=":id"> List </Link> */}
         <Link to="paintings/add"> Add </Link>
-        <hr />
+
         <Outlet />
       </nav>
     </div>

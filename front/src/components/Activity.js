@@ -31,7 +31,7 @@ function Activity() {
         </figure>
       </header>
       <section className="section--video">
-        <h2>Artiste Peintre Impressionniste</h2>
+        {/* <h2>Artiste Peintre Impressionniste</h2> */}
 
         <video controls autoPlay loop muted>
           <source

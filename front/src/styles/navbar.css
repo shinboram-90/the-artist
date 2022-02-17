@@ -3,9 +3,11 @@
   top: 0;
   width: 100%;
   z-index: 1000;
-  /* background-color: #003459; */
-  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  background: #301a4b;
+  border-radius: 0 0 10px 10px;
 }
+
 /* 
 .navbar a:hover {
   color: #9367c0;
@@ -18,9 +20,9 @@
 } */
 
 .img--splash-nav {
-  height: 70%;
+  height: 3rem;
   position: absolute;
-  top: 1rem;
+  top: 0.5rem;
   right: 2rem;
   display: none;
 }
@@ -87,12 +89,12 @@
     background: #9367c0; /* fallback for old browsers */
     background: -webkit-linear-gradient(
       to right,
-      #f1c9cb,
+      #f39a9d,
       #9367c0
     ); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(
       to right,
-      #f1c9cb,
+      #f39a9d,
       #9367c0
     ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
