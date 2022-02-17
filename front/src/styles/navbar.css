@@ -8,17 +8,6 @@
   border-radius: 0 0 10px 10px;
 }
 
-/* 
-.navbar a:hover {
-  color: #9367c0;
-} */
-
-/* .wave {
-  position: fixed;
-  z-index: -1;
-  display: none;
-} */
-
 .img--splash-nav {
   height: 3rem;
   position: absolute;
@@ -115,6 +104,77 @@
     display: block;
     cursor: pointer;
   }
+
+  .li--underline img {
+    display: none;
+  }
+
+  .li--underline {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 620.2px) {
+  .li--underline img {
+    height: 5.2px;
+    position: absolute;
+    bottom: 0.2rem;
+  }
+
+  .img--underline-1 {
+    width: 200px;
+  }
+
+  .img--underline-2 {
+    width: 83px;
+  }
+
+  .img--underline-3 {
+    width: 82px;
+  }
+
+  .img--underline-4 {
+    width: 74px;
+  }
+
+  .li--underline {
+    height: 50.4px;
+    position: absolute;
+    top: 0.5rem;
+  }
+
+  .li--underline span {
+    visibility: hidden;
+  }
+
+  .li--underline:hover span {
+    visibility: visible;
+  }
+
+  .li--underline-1 {
+    width: 200px;
+    left: 2.7rem;
+  }
+
+  .li--underline-2 {
+    width: 83px;
+    right: 16.5rem;
+  }
+
+  .li--underline-3 {
+    width: 82px;
+    right: 9.4rem;
+  }
+
+  .li--underline-4 {
+    width: 74px;
+    right: 2.9rem;
+  }
+  /* .li--underline-1:hover {
+    visibility: visible;
+    background-color: #9367c0;
+  
+  } */
 }
 
 @media screen and (max-width: 500px) {

@@ -1,6 +1,6 @@
 .container--about {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column;
   overflow: hidden;
   position: relative;
   background-color: #fffffa;
@@ -69,6 +69,10 @@
   .img--paintbrush {
     top: 22rem;
   }
+
+  .container--about {
+    flex-direction: row-reverse;
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -78,5 +82,9 @@
 
   .img--paintbrush {
     top: 18rem;
+  }
+
+  .container--about {
+    flex-direction: row-reverse;
   }
 }

@@ -18,6 +18,15 @@ function Layout() {
             <li>
               <Link to="/" onClick={() => setActive(false)}>
                 <h1>JADE ROUGERIE</h1>
+                <div className="li--underline li--underline-1">
+                  <span>
+                    <img
+                      className="img--underline-1"
+                      alt="red paint line"
+                      src={require('../assets/red-paint-brush-stroke.png')}
+                    />
+                  </span>
+                </div>
               </Link>
             </li>
           </div>
@@ -26,18 +35,44 @@ function Layout() {
           >
             <li>
               <Link to="about" onClick={() => setActive(false)}>
-                À propos
+                <span>À propos</span>
+                <div className="li--underline li--underline-2">
+                  <span>
+                    <img
+                      className="img--underline-2"
+                      alt="red paint line"
+                      src={require('../assets/red-paint-brush-stroke.png')}
+                    />
+                  </span>
+                </div>
               </Link>
             </li>
             <li>
               <Link to="paintings" onClick={() => setActive(false)}>
-                {' '}
-                Tableaux{' '}
+                <span>Tableaux</span>
+                <div className="li--underline li--underline-3">
+                  <span>
+                    <img
+                      className="img--underline-3"
+                      alt="red paint line"
+                      src={require('../assets/red-paint-brush-stroke.png')}
+                    />
+                  </span>
+                </div>
               </Link>
             </li>
             <li>
               <Link to="contact" onClick={() => setActive(false)}>
-                Contact
+                <span>Contact</span>
+                <div className="li--underline li--underline-4">
+                  <span>
+                    <img
+                      className="img--underline-4"
+                      alt="red paint line"
+                      src={require('../assets/red-paint-brush-stroke.png')}
+                    />
+                  </span>
+                </div>
               </Link>
             </li>
           </div>
