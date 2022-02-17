@@ -1,6 +1,7 @@
 import { Link, Outlet } from 'react-router-dom';
 import { useState } from 'react';
 import '../styles/navbar.css';
+import Footer from '../components/Footer';
 
 function Layout() {
   const [isActive, setActive] = useState(false);
@@ -19,7 +20,7 @@ function Layout() {
         <ul>
           <div>
             <li>
-              <Link to="/">
+              <Link to="/" onClick={() => setActive(false)}>
                 <h1>JADE ROUGERIE</h1>
               </Link>
             </li>
@@ -28,13 +29,20 @@ function Layout() {
             className={`navbar--items ${isActive ? 'hide--nav' : 'show--nav'}`}
           >
             <li>
-              <Link to="about">À propos</Link>
+              <Link to="about" onClick={() => setActive(false)}>
+                À propos
+              </Link>
             </li>
             <li>
-              <Link to="paintings"> Tableaux </Link>
+              <Link to="paintings" onClick={() => setActive(false)}>
+                {' '}
+                Tableaux{' '}
+              </Link>
             </li>
             <li>
-              <Link to="contact">Contact</Link>
+              <Link to="contact" onClick={() => setActive(false)}>
+                Contact
+              </Link>
             </li>
           </div>
         </ul>
@@ -47,9 +55,12 @@ function Layout() {
           src={require('../assets/white.png')}
         />
       </nav>
-      <div className="content">
+      <main className="content">
         <Outlet />
-      </div>
+      </main>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }

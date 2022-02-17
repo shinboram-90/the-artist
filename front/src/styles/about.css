@@ -1,0 +1,65 @@
+.container--about {
+  display: flex;
+  flex-direction: row-reverse;
+  overflow: hidden;
+  position: relative;
+}
+
+.section--about {
+  background-color: #cdedf6;
+}
+
+.header--about {
+  text-align: center;
+  max-width: 50%;
+  /* position: relative; */
+  /* background-color: blue; */
+  /* overflow: hidden; */
+  /* width: calc(100vw-4rem); */
+  padding: 12rem 0 3rem 0;
+}
+
+.container--portrait {
+  text-align: center;
+  padding: 0.7rem;
+  /* width: 22.5rem; */
+  margin: 3rem;
+  max-width: 20rem;
+  background: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.img--portrait {
+  max-width: 18rem;
+
+  text-align: center;
+
+  border-radius: 9px;
+}
+
+.img--paintbrush {
+  transform: rotate(130deg);
+  max-width: 680px;
+  position: absolute;
+  /* z-index: -1000; */
+  top: 20rem; /* position the top  edge of the element at the middle of the parent */
+  right: -7rem; /* position the left edge of the element at the middle of the parent */
+}
+
+@media screen and (max-width: 500px) {
+  .img--portrait {
+    max-width: 200px;
+  }
+
+  .container--portrait {
+    max-width: 12.5rem;
+  }
+
+  .img--paintbrush {
+    max-width: 500px;
+  }
+}
