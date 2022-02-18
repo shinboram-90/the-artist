@@ -12,8 +12,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   max-width: 1500px !important;
-
-  /* float: none !important; */
 }
 
 body,
@@ -50,7 +48,7 @@ h1 {
 
 h2 {
   color: #3f6c51;
-  /* font-size: 5rem; */
+  font-size: 5rem;
   margin: 1rem 0;
   /* font-family: 'Jost', sans-serif; */
   font-family: 'Poiret One', cursive;
@@ -67,9 +65,3 @@ p {
 
 /* font-family: 'Poiret One', cursive;
 font-family: 'Sen', sans-serif; */
-
-/* @media screen and (min-width: 1499px) {
-  section {
-    width: 500px;
-  }
-} */

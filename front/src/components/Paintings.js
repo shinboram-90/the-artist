@@ -6,26 +6,25 @@ function Painting() {
   const navigate = useNavigate();
   return (
     <>
-      <section className="listOfProducts">
-        <div className="productsList">
+      <section className="section--list">
+        <h2>Gallerie</h2>
+        <div className="paintings--list">
           {paintingData.map((painting) => {
             return (
               <div
                 key={painting.id}
-                className="productDisplay"
                 onClick={() => {
                   navigate(`${painting.id}`);
                 }}
               >
                 {console.log(painting)}
                 <h1>{painting.name}</h1>
-                <p>{painting.description}</p>
+                {/* <p>{painting.description}</p> */}
                 <img
-                  className="paintings--image"
+                  className="painting--list-img"
                   alt="test"
-                  src={painting.photo}
+                  src={require(`../assets/mini/${painting.cover}`)}
                 />
-                {/* src={`../images/${props.painting.img}`} */}
               </div>
             );
           })}

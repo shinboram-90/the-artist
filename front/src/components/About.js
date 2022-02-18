@@ -23,12 +23,12 @@ function About() {
           <p>
             Jade B. Rougerie vient au monde dans une région merveilleuse
             vallonnée de plaines de torrents et de fleurs, à St Léonard de
-            Noblat dans le Limousin ou -Poulidor -, notre « Poupou National »
-            champion cycliste, amis de la famille vivait et côtoyait ses grands
+            Noblat dans le Limousin où Poulidor, notre « Poupou National »
+            champion cycliste, ami de la famille vivait et côtoyait ses grands
             frères.
           </p>
           <p>
-            Puis très très jeunes, ils partent tous pour Nice ou elle fait ses
+            Puis très très jeunes, ils partent tous pour Nice où elle fait ses
             études voulant être astrophysicienne, mais elle choisira la Marine
             comme sont père Commandant de Tankers qui lui donne alors
             l&apos;envie aussi de découvrir le monde, les océans, et les mers.

@@ -9,6 +9,7 @@ export const paintingData = [
     'price': 2000,
     'frame': true,
     'photo': 'les-oiseaux-du-soleil1.jpg',
+    'cover': '78.webp',
   },
   {
     'id': 2,
@@ -20,6 +21,7 @@ export const paintingData = [
     'price': 2200,
     'frame': true,
     'photo': 'https://react.semantic-ui.com/images/avatar/large/rachel.png',
+    'cover': 'unknown.jpeg',
   },
   {
     'id': 3,
@@ -31,6 +33,7 @@ export const paintingData = [
     'price': 1500,
     'frame': true,
     'photo': 'https://react.semantic-ui.com/images/avatar/large/rachel.png',
+    'cover': 'unknown.jpeg',
   },
   {
     'id': 4,
@@ -42,6 +45,7 @@ export const paintingData = [
     'price': 5000,
     'frame': false,
     'photo': '88/le-bosphore1.jpg',
+    'cover': '88.webp',
   },
   {
     'id': 5,
@@ -53,6 +57,7 @@ export const paintingData = [
     'price': 1600,
     'frame': true,
     'photo': 'https://react.semantic-ui.com/images/avatar/large/rachel.png',
+    'cover': '169.webp',
   },
   {
     'id': 6,
@@ -65,6 +70,7 @@ export const paintingData = [
     'frame': true,
     'photo':
       'https://res.cloudinary.com/dblhjhkq0/image/upload/v1645009007/171_Volupt%C3%A9_de_la_couleur_9480_dro1bv.jpg',
+    'cover': '171.webp',
   },
   {
     'id': 7,
@@ -76,6 +82,7 @@ export const paintingData = [
     'price': 3000,
     'frame': true,
     'photo': '172/le-bosphore1.jpg',
+    'cover': '172.webp',
   },
   {
     'id': 8,
@@ -87,6 +94,7 @@ export const paintingData = [
     'price': 1400,
     'frame': false,
     'photo': '173/parfum-d-automne1.jpg',
+    'cover': 'unknown.jpeg',
   },
   {
     'id': 9,
@@ -98,6 +106,7 @@ export const paintingData = [
     'price': 2900,
     'frame': true,
     'photo': '174/marrakech1',
+    'cover': '174.webp',
   },
   {
     'id': 10,
@@ -109,6 +118,7 @@ export const paintingData = [
     'price': 2590,
     'frame': true,
     'photo': '175/le-belem1.jpg',
+    'cover': '175.webp',
   },
   {
     'id': 11,
@@ -120,6 +130,7 @@ export const paintingData = [
     'price': 2100,
     'frame': true,
     'photo': '176/fleurs-des-iles1.jpg',
+    'cover': '176.webp',
   },
   {
     'id': 12,
@@ -131,6 +142,7 @@ export const paintingData = [
     'price': 1700,
     'frame': true,
     'photo': '190/trappeur-canadien1.jpg',
+    'cover': '190.webp',
   },
   {
     'id': 13,
@@ -142,6 +154,7 @@ export const paintingData = [
     'price': 1300,
     'frame': false,
     'photo': '191/trappeur-canadien1.jpg',
+    'cover': '191.webp',
   },
   {
     'id': 14,
@@ -153,6 +166,7 @@ export const paintingData = [
     'price': 2000,
     'frame': true,
     'photo': 'https://react.semantic-ui.com/images/avatar/large/rachel.png',
+    'cover': '78.webp',
   },
   {
     'id': 15,
@@ -164,6 +178,7 @@ export const paintingData = [
     'price': 300,
     'frame': false,
     'photo': 'https://react.semantic-ui.com/images/avatar/large/rachel.png',
+    'cover': 'kosovo.jpg',
   },
   {
     'id': 16,
@@ -175,6 +190,7 @@ export const paintingData = [
     'price': 2070,
     'frame': true,
     'photo': 'https://react.semantic-ui.com/images/avatar/large/rachel.png',
+    'cover': 'unknown.jpeg',
   },
   {
     'id': 17,
@@ -186,6 +202,7 @@ export const paintingData = [
     'price': 2000,
     'frame': true,
     'photo': 'https://react.semantic-ui.com/images/avatar/large/rachel.png',
+    'cover': 'unknown.jpeg',
   },
   {
     'id': 18,
@@ -197,6 +214,7 @@ export const paintingData = [
     'price': 4000,
     'frame': true,
     'photo': 'https://react.semantic-ui.com/images/avatar/large/rachel.png',
+    'cover': 'unknown.jpeg',
   },
   {
     'id': 19,
@@ -208,6 +226,7 @@ export const paintingData = [
     'price': 1200,
     'frame': true,
     'photo': 'https://react.semantic-ui.com/images/avatar/large/rachel.png',
+    'cover': 'unknown.jpeg',
   },
   {
     'id': 20,
@@ -219,6 +238,7 @@ export const paintingData = [
     'price': 2000,
     'frame': true,
     'photo': 'https://react.semantic-ui.com/images/avatar/large/rachel.png',
+    'cover': 'unknown.jpeg',
   },
   {
     'id': 21,
@@ -230,6 +250,7 @@ export const paintingData = [
     'price': 2200,
     'frame': true,
     'photo': 'https://react.semantic-ui.com/images/avatar/large/rachel.png',
+    'cover': 'unknown.jpeg',
   },
   {
     'id': 22,
@@ -241,6 +262,7 @@ export const paintingData = [
     'price': 3600,
     'frame': true,
     'photo': 'https://react.semantic-ui.com/images/avatar/large/rachel.png',
+    'cover': 'unknown.jpeg',
   },
   {
     'id': 23,
@@ -252,5 +274,6 @@ export const paintingData = [
     'price': 500,
     'frame': true,
     'photo': 'https://react.semantic-ui.com/images/avatar/large/rachel.png',
+    'cover': 'unknown.jpeg',
   },
 ];
