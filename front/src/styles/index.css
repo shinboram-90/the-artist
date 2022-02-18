@@ -1,11 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   padding-top: 57px;
-  margin: 0;
+  margin: 0 auto;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  max-width: 1500px !important;
 }
 
 body,
@@ -36,17 +42,26 @@ section {
 
 h1 {
   margin: 0.7rem 0;
+  font-family: 'Sen', sans-serif;
+  font-weight: 700;
 }
 
 h2 {
   color: #3f6c51;
   font-size: 5rem;
   margin: 1rem 0;
+  /* font-family: 'Jost', sans-serif; */
+  font-family: 'Poiret One', cursive;
 }
-
+p {
+  font-family: 'Sen', sans-serif;
+}
 /* COLOURS */
 /* dark purple : #301A4B
  purple : #9367C0
  white : #FFFFFA
  salmon: #F39A9D
  green : #3F6C51 */
+
+/* font-family: 'Poiret One', cursive;
+font-family: 'Sen', sans-serif; */
