@@ -53,6 +53,7 @@ h2 {
   /* font-family: 'Jost', sans-serif; */
   font-family: 'Poiret One', cursive;
 }
+
 p {
   font-family: 'Sen', sans-serif;
 }
@@ -69,6 +70,13 @@ font-family: 'Sen', sans-serif; */
 @media screen and (max-width: 500px) {
   section {
     padding: 5rem 2rem;
-    background-color: #fffffa;
   }
+}
+
+h3 {
+  color: #301a4b;
+  font-size: 1rem;
+
+  /* font-family: 'Jost', sans-serif; */
+  font-family: 'Poiret One', cursive;
 }

@@ -35,7 +35,7 @@ function Layout() {
           >
             <li>
               <Link to="about" onClick={() => setActive(false)}>
-                <span>À propos</span>
+                <strong>À propos</strong>
                 <div className="li--underline li--underline-2">
                   <span>
                     <img
@@ -49,7 +49,7 @@ function Layout() {
             </li>
             <li>
               <Link to="paintings" onClick={() => setActive(false)}>
-                <span>Tableaux</span>
+                <strong>Tableaux</strong>
                 <div className="li--underline li--underline-3">
                   <span>
                     <img
@@ -63,7 +63,7 @@ function Layout() {
             </li>
             <li>
               <Link to="contact" onClick={() => setActive(false)}>
-                <span>Contact</span>
+                <strong>Contact</strong>
                 <div className="li--underline li--underline-4">
                   <span>
                     <img

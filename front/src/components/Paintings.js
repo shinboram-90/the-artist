@@ -8,8 +8,10 @@ function Painting() {
 
   return (
     <>
-      <section className="section--list">
-        <h2>Gallerie</h2>
+      <section className="section--list background">
+        <h2 className="title--gallery">Gallerie</h2>
+        <span className="special"></span>
+        {/* <div className="background"></div> */}
 
         <Masonry className="paintings--list" elementType={'ul'}>
           {paintingData.map((painting) => {
@@ -24,9 +26,8 @@ function Painting() {
                 {/* <div>{painting.description}</div> */}
                 <img
                   className="painting--list-img"
-                  alt="test"
+                  alt={painting.name}
                   src={require(`../assets/mini/${painting.cover}`)}
-                  loading="lazy"
                 />
 
                 <h3>{painting.name}</h3>
