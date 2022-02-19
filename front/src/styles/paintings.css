@@ -1,10 +1,13 @@
 .paintings--list {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: masonry;
-  align-content: end;
-  masonry-auto-flow: next;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  /* grid-template-rows: masonry; */
+  /* align-content: end; */
+  grid-auto-flow: dense;
+  grid-auto-rows: auto;
+  /* masonry-auto-flow: next; */
   gap: 2rem;
+  grid-gap: 2rem;
 }
 
 .painting--list-img {
@@ -12,6 +15,9 @@
   cursor: pointer;
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
+  width: 100%;
+  /* height: 100%; */
+  object-fit: cover;
 }
 
 .painting--list-img:hover {
