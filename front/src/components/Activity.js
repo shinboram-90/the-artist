@@ -14,7 +14,7 @@ function Activity() {
 
           <blockquote>
             <p>
-              <strong>L'ART</strong> est comme une prière, une main étendue dans
+              <strong>L'ART</strong> est comme une prière, une main tendue dans
               l'obscurité qui veut saisir une part de grâce afin de se muer en
               une main... qui donne !
             </p>

@@ -65,3 +65,10 @@ p {
 
 /* font-family: 'Poiret One', cursive;
 font-family: 'Sen', sans-serif; */
+
+@media screen and (max-width: 500px) {
+  section {
+    padding: 5rem 2rem;
+    background-color: #fffffa;
+  }
+}
