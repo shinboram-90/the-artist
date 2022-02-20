@@ -1,9 +1,14 @@
 .bg--image {
+  margin-top: -2rem;
   height: 100vh;
   position: relative;
   overflow: hidden;
   max-width: 1500px;
   background-color: #fefbf8;
+  padding-top: 3rem;
+  margin-bottom: -10rem;
+
+  /* background-color: #00171f; */
 }
 
 .paint--font {
@@ -13,7 +18,7 @@
   font-family: 'wc_rhesus_b_btaitalic';
   color: black;
   font-size: 40rem;
-  padding: 1rem;
+
   background: url('../assets/oil-paint.jpg') no-repeat;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -23,11 +28,9 @@
 .quote {
   margin: 0;
   padding: 2rem 1.5rem 1rem 1.5rem;
-  min-width: 55%;
-  position: absolute;
-  top: 50%; /* position the top  edge of the element at the middle of the parent */
-  left: 50%; /* position the left edge of the element at the middle of the parent */
-  transform: translate(-50%, -50%);
+  width: 80%;
+
+  margin: 0 auto;
   font-size: 1.2rem;
   color: #00171f;
   background: rgba(255, 255, 255, 0.35);
@@ -41,20 +44,6 @@
 
 .quote > img {
   position: absolute;
-}
-
-.img--splash-top {
-  height: 300px;
-  top: -40px;
-  left: -60px;
-}
-
-.img--splash-bottom {
-  height: 200px;
-  bottom: -70px;
-  right: -70px;
-  z-index: -1;
-  overflow: hidden;
 }
 
 .quote p {
@@ -74,40 +63,14 @@
 
 .section--video {
   text-align: center;
-  padding: 3rem;
+  padding: 8rem 3rem;
 }
 
 video {
-  width: 500px;
+  width: 100%;
 }
 
-@media screen and (max-width: 550px) {
-  video {
-    width: 300px;
-  }
-  .img--splash-bottom {
-    height: 150px;
-    right: -30px;
-  }
-  .quote {
-    font-size: 1rem;
-    padding: 2rem 0 1rem 0;
-    min-width: 70%;
-  }
-  .section--video {
-    padding: 1.7rem 1rem;
-  }
-}
-
-@media screen and (min-width: 1279px) {
-  video {
-    width: 700px;
-  }
-
-  .quote {
-    font-size: 1.7rem;
-  }
-}
+/* -------------- TITLE -------------- */
 
 .header--container {
   display: flex;
@@ -117,22 +80,24 @@ video {
 .title--container {
   display: flex;
   flex-direction: column;
-  width: 100vw;
-  padding: 5rem 2rem 2rem 2rem;
+  width: 80%;
+  padding: 5rem 0 4rem 0;
+  margin: 0 auto;
 }
 
 .title-artist {
-  font-size: 100%;
+  font-size: 20vw;
   text-align: start;
 }
 
 .title-painter {
-  font-size: 100%;
-  text-align: center;
+  font-size: 17vw;
+  text-align: right;
 }
 
 .line-through {
   text-decoration: line-through;
+  font-size: 10vw;
 }
 
 .line-through:before {
@@ -143,52 +108,37 @@ video {
   content: '\00a0\00a0\00a0\00a0\00a0';
 }
 
-/* .title-minus {
-  background-color: black;
-  height: 3.55px;
-  width: 60px;
-  right: 2rem;
-  top: 12.07rem;
-  position: absolute;
-} */
-
 .title-impressionist {
-  font-size: 100%;
+  font-size: 11vw;
   text-align: right;
 }
 
+/* -------------- BUTTON -------------- */
+
 .header--button {
-  width: 130px;
-  height: 40px;
-  color: #fff;
+  width: 7.5rem;
+  height: 3rem;
+  color: black;
+  font-weight: bold;
   border-radius: 5px;
-  padding: 10px 25px;
-  font-weight: 500;
-  background: transparent;
+  font-family: 'Sen', sans-serif;
+  text-transform: uppercase;
   cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
-  display: inline-block;
   box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
     7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   outline: none;
-}
-
-.btn-5 {
-  width: 130px;
-  height: 40px;
-  line-height: 42px;
-  padding: 0;
   border: none;
-  background: rgb(255, 27, 0);
+  background: rgb(164, 212, 180);
   background: linear-gradient(
     0deg,
-    rgba(255, 27, 0, 1) 0%,
-    rgba(251, 75, 2, 1) 100%
+    rgba(164, 212, 180, 1) 0%,
+    rgb(166, 215, 182) 100%
   );
 }
+
 .btn-5:hover {
-  color: #f0094a;
   background: transparent;
   box-shadow: none;
 }
@@ -200,7 +150,7 @@ video {
   right: 0;
   height: 2px;
   width: 0;
-  background: #f0094a;
+  background: black;
   box-shadow: -1px -1px 5px 0px #fff, 7px 7px 20px 0px #0003,
     4px 4px 5px 0px #0002;
   transition: 400ms ease all;
@@ -215,4 +165,38 @@ video {
 .btn-5:hover:after {
   width: 100%;
   transition: 800ms ease all;
+}
+
+.btn--container {
+  display: flex;
+  justify-content: center;
+}
+
+/* -------------- SUPER TINY SCREEN -------------- */
+@media screen and (min-width: 279px) and (max-width: 280px) {
+  .section--video {
+    padding: 5rem 1rem 3rem 1rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  /* .title--container {
+    padding: 5rem 2rem 3rem 2rem;
+  } */
+}
+
+@media screen and (min-width: 750px) and (max-width: 1279px) {
+  .header--container {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  video {
+    width: 700px;
+  }
+
+  .quote {
+    font-size: 1.7rem;
+  }
 }

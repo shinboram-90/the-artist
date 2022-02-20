@@ -10,7 +10,7 @@ function Activity() {
           <h1 className="title--container">
             <span className="title-artist">Artiste </span>
             <span className="title-painter">
-              Peintre<span className="line-through"></span>{' '}
+              Peintre <span className="line-through"></span>{' '}
             </span>
             {/* <span className="title-minus"></span> */}
             <span className="title-impressionist">Impressionniste</span>
@@ -32,13 +32,15 @@ function Activity() {
             </blockquote>
           </figure>
         </div>
+      </header>
+      <div className="btn--container">
         <button
           className="header--button btn-5"
           onClick={() => navigate('/paintings')}
         >
           Gallerie
         </button>
-      </header>
+      </div>
       <section className="section--video">
         <video controls autoPlay loop muted>
           <source
