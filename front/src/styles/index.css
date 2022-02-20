@@ -1,3 +1,15 @@
+@font-face {
+  font-family: 'wc_rhesus_b_btaitalic';
+  src: url('fonts/WC_Rhesus_B_Bta-webfont.eot');
+  src: url('fonts/WC_Rhesus_B_Bta-webfont.eot?#iefix')
+      format('embedded-opentype'),
+    url('fonts/WC_Rhesus_B_Bta-webfont.woff') format('woff'),
+    url('fonts/WC_Rhesus_B_Bta-webfont.ttf') format('truetype'),
+    url('fonts/WC_Rhesus_B_Bta-webfont.svg#wc_rhesus_b_btaitalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -12,6 +24,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   max-width: 1500px !important;
+  background-color: #fefbf8;
 }
 
 body,
@@ -32,25 +45,33 @@ li {
 a,
 a:active {
   text-decoration: none; /* no underline */
-  color: white;
+  color: black;
 }
 
 section {
   padding: 5rem 3rem 5rem 3rem;
-  background-color: #fffffa;
+  background-color: #fefbf8;
+}
+
+.navbar h1 {
+  margin: 0.7rem 0;
+
+  font-weight: 700;
+  font-size: 1.5rem;
 }
 
 h1 {
-  margin: 0.7rem 0;
-  font-family: 'Sen', sans-serif;
-  font-weight: 700;
+  /* font-family: 'Sen', sans-serif; */
+  /* font-size: 5rem; */
+  font-family: 'Poiret One', cursive;
+  text-transform: uppercase;
+  margin: 0;
 }
 
 h2 {
-  color: #3f6c51;
+  color: #048ba8;
   font-size: 5rem;
   margin: 1rem 0;
-  /* font-family: 'Jost', sans-serif; */
   font-family: 'Poiret One', cursive;
 }
 
@@ -63,6 +84,8 @@ p {
  white : #FFFFFA
  salmon: #F39A9D
  green : #3F6C51 */
+
+/* new-white: #fefbf8 */
 
 /* font-family: 'Poiret One', cursive;
 font-family: 'Sen', sans-serif; */

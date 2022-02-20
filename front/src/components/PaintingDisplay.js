@@ -12,32 +12,30 @@ function PaintingDisplay() {
 
   console.log(photos);
   return (
-    <div className="listOfPaintings">
-      <section className="paintingDisplay">
-        <h2>{paintingData[id - 1].name}</h2>{' '}
-        <p>{paintingData[id - 1].description}</p>{' '}
-        {/* <img
+    <section className="paintingDisplay background">
+      <h2>{paintingData[id - 1].name}</h2>{' '}
+      <p>{paintingData[id - 1].description}</p>{' '}
+      {/* <img
           className="painting--display-img"
           alt={paintingData[id - 1].name}
           src={require(`../assets/mini/${photos}`)}
         /> */}
-        <div className="carousel-wrapper">
-          <Carousel>
-            {photos.map((photo) => {
-              return (
-                <div key={photo} className="image-wrapper">
-                  <img
-                    className="painting--one-img"
-                    alt={photo}
-                    src={require(`../assets/big/${photo}`)}
-                  />
-                </div>
-              );
-            })}
-          </Carousel>
-        </div>
-      </section>
-    </div>
+      <div className="carousel-wrapper">
+        <Carousel>
+          {photos.map((photo) => {
+            return (
+              <div key={photo} className="image-wrapper">
+                <img
+                  className="painting--one-img"
+                  alt={photo}
+                  src={require(`../assets/big/${photo}`)}
+                />
+              </div>
+            );
+          })}
+        </Carousel>
+      </div>
+    </section>
   );
 }
 

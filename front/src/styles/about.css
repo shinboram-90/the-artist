@@ -2,7 +2,7 @@
   display: grid;
   overflow: hidden;
   position: relative;
-  background-color: #fffffa;
+  background-color: #fefbf8;
   grid-template-areas:
     'title title'
     'photo photo'

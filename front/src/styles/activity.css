@@ -1,24 +1,23 @@
 .bg--image {
-  background-image: url('../assets/173/parfum-d-automne2.webp');
   height: 100vh;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   position: relative;
   overflow: hidden;
   max-width: 1500px;
+  background-color: #fefbf8;
 }
 
-.bg--overlay {
-  background: rgb(2, 0, 36);
-  background: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 0.5) 0%,
-    rgba(2, 0, 36, 0.4) 70%
-  );
-  /* z-index: 2000; */
-  height: 100%;
-  width: 100%;
+.paint--font {
+  top: -35rem;
+  right: 0;
+  position: absolute;
+  font-family: 'wc_rhesus_b_btaitalic';
+  color: black;
+  font-size: 40rem;
+  padding: 1rem;
+  background: url('../assets/oil-paint.jpg') no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-position: 50%;
 }
 
 .quote {
@@ -108,4 +107,112 @@ video {
   .quote {
     font-size: 1.7rem;
   }
+}
+
+.header--container {
+  display: flex;
+  flex-direction: column;
+}
+
+.title--container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  padding: 5rem 2rem 2rem 2rem;
+}
+
+.title-artist {
+  font-size: 100%;
+  text-align: start;
+}
+
+.title-painter {
+  font-size: 100%;
+  text-align: center;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+.line-through:before {
+  content: '\00a0';
+}
+
+.line-through:after {
+  content: '\00a0\00a0\00a0\00a0\00a0';
+}
+
+/* .title-minus {
+  background-color: black;
+  height: 3.55px;
+  width: 60px;
+  right: 2rem;
+  top: 12.07rem;
+  position: absolute;
+} */
+
+.title-impressionist {
+  font-size: 100%;
+  text-align: right;
+}
+
+.header--button {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+.btn-5 {
+  width: 130px;
+  height: 40px;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  background: rgb(255, 27, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 27, 0, 1) 0%,
+    rgba(251, 75, 2, 1) 100%
+  );
+}
+.btn-5:hover {
+  color: #f0094a;
+  background: transparent;
+  box-shadow: none;
+}
+.btn-5:before,
+.btn-5:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: #f0094a;
+  box-shadow: -1px -1px 5px 0px #fff, 7px 7px 20px 0px #0003,
+    4px 4px 5px 0px #0002;
+  transition: 400ms ease all;
+}
+.btn-5:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+.btn-5:hover:before,
+.btn-5:hover:after {
+  width: 100%;
+  transition: 800ms ease all;
 }
