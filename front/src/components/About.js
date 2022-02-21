@@ -15,7 +15,7 @@ function About() {
             <img
               className="img--portrait"
               alt="artist Jade Rougerie smiling"
-              src={require('../assets/Bio/Jade-2.jpg')}
+              src={require('../assets/Bio/Jade-2.webp')}
             />
           </div>
         </header>

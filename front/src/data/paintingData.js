@@ -65,8 +65,8 @@ export const paintingData = [
     'price': 1600,
     'frame': true,
     'photo': [
-      'opaline-fleurs-et-fruits1.jpg',
-      'opaline-fleurs-et-fruits2.jpg',
+      'opaline-fleurs-et-fruits1.webp',
+      'opaline-fleurs-et-fruits2.webp',
       'opaline-fleurs-et-fruits3.jpg',
     ],
     'date': 2022,
