@@ -14,12 +14,7 @@ function PaintingDisplay() {
   return (
     <section className="paintingDisplay background">
       <h2>{paintingData[id - 1].name}</h2>{' '}
-      <p>{paintingData[id - 1].description}</p>{' '}
-      {/* <img
-          className="painting--display-img"
-          alt={paintingData[id - 1].name}
-          src={require(`../assets/mini/${photos}`)}
-        /> */}
+      <p>Description : {paintingData[id - 1].description}</p>{' '}
       <div className="carousel-wrapper">
         <Carousel>
           {photos.map((photo) => {
@@ -35,6 +30,10 @@ function PaintingDisplay() {
           })}
         </Carousel>
       </div>
+      <p>Prix : {paintingData[id - 1].price} €</p>
+      <p>Date : {paintingData[id - 1].date}</p>
+      <p>Cadre : {paintingData[id - 1].frame ? 'Oui' : 'Non'}</p>
+      <p>Dimensions: {paintingData[id - 1].dimension}</p>
     </section>
   );
 }

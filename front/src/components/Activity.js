@@ -6,8 +6,8 @@ function Activity() {
   return (
     <>
       <header className="header--container">
-        <div>
-          <h1 className="title--container">
+        <div className="title--container">
+          <h1>
             <span className="title-artist">Artiste </span>
             <span className="title-painter">
               Peintre <span className="line-through"></span>{' '}
@@ -18,6 +18,7 @@ function Activity() {
         </div>
         <div className="bg--image">
           <span className="paint--font">S</span>
+
           <figure className="quote">
             <blockquote>
               <p>
@@ -32,6 +33,7 @@ function Activity() {
             </blockquote>
           </figure>
         </div>
+        <span className="paint--font-bigscreen">W</span>
       </header>
       <div className="btn--container">
         <button

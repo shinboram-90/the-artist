@@ -6,7 +6,8 @@
   max-width: 1500px;
   background-color: #fefbf8;
   padding-top: 3rem;
-  margin-bottom: -10rem;
+  margin-bottom: -15rem;
+  z-index: -1;
 
   /* background-color: #00171f; */
 }
@@ -68,6 +69,7 @@
 
 video {
   width: 100%;
+  max-width: 700px;
 }
 
 /* -------------- TITLE -------------- */
@@ -75,6 +77,9 @@ video {
 .header--container {
   display: flex;
   flex-direction: column;
+  padding-bottom: 2rem;
+  position: relative;
+  overflow: hidden;
 }
 
 .title--container {
@@ -173,30 +178,123 @@ video {
 }
 
 /* -------------- SUPER TINY SCREEN -------------- */
-@media screen and (min-width: 279px) and (max-width: 280px) {
+@media screen and (min-width: 249px) and (max-width: 411px) {
+  .quote {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .bg--image {
+    margin-bottom: -18rem;
+  }
+  .quote {
+    font-size: 1rem;
+  }
+
   .section--video {
-    padding: 5rem 1rem 3rem 1rem;
+    padding: 6rem 2rem;
   }
 }
 
-@media screen and (max-width: 500px) {
-  /* .title--container {
-    padding: 5rem 2rem 3rem 2rem;
-  } */
+@media screen and (min-width: 100px) and (max-width: 749.9px) {
+  .paint--font-bigscreen {
+    color: transparent;
+  }
 }
 
-@media screen and (min-width: 750px) and (max-width: 1279px) {
+@media screen and (min-width: 599px) {
+  .paint--font {
+    width: 100%;
+    top: -30rem;
+    font-size: 35rem;
+  }
+}
+
+@media screen and (min-width: 750px) and (max-width: 2000px) {
   .header--container {
     flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 12rem;
   }
-}
 
-@media screen and (min-width: 1280px) {
-  video {
-    width: 700px;
+  .section--video {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  .title--container {
+    padding-top: 8rem;
+    padding-left: 3rem;
+    width: 40%;
+  }
+
+  .title-artist {
+    font-size: 11vw;
+  }
+
+  .title-painter {
+    font-size: 8vw;
+  }
+  .line-through {
+    font-size: 3.7vw;
+  }
+
+  .title-impressionist {
+    font-size: 5.5vw;
+  }
+
+  .bg--image {
+    width: 65%;
+    padding-top: 8rem;
   }
 
   .quote {
-    font-size: 1.7rem;
+    width: 70%;
+  }
+
+  .paint--font {
+    top: -27rem;
+  }
+
+  .paint--font-bigscreen {
+    font-size: 20rem;
+    font-family: 'wc_rhesus_b_btaitalic';
+    background: url('../assets/oil-paint.jpg') no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-position: 50%;
+    position: absolute;
+    top: 6rem;
+    right: 52%;
+    z-index: -1;
+  }
+}
+
+@media screen and (min-width: 1090px) and (max-width: 2000px) {
+  .quote {
+    font-size: 1.2rem;
+    width: 60%;
+  }
+
+  .title-artist {
+    font-size: 8rem;
+  }
+
+  .title-painter {
+    font-size: 6rem;
+  }
+  .line-through {
+    font-size: 2.3rem;
+  }
+
+  .title-impressionist {
+    font-size: 3.7rem;
+  }
+
+  .title--container {
+    padding-top: 10rem;
+  }
+
+  .bg--image {
+    width: 55%;
+    padding-top: 12rem;
   }
 }

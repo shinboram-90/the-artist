@@ -8,6 +8,7 @@
     'photo photo'
     'article article';
   max-width: 1500px;
+  padding-bottom: 2rem;
 }
 
 .title--about {
@@ -25,6 +26,7 @@
 
 .section--about {
   grid-area: article;
+  font-size: 1.2rem;
 }
 
 .container--portrait {
@@ -147,7 +149,7 @@
   }
 
   .section--about {
-    padding: 6rem 3rem 2rem 3rem;
+    padding: 7rem 3rem 4rem 3rem;
   }
 }
 
